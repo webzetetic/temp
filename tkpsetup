@@ -1,0 +1,15 @@
+#install dependencies
+sudo apt-get install python-software-properties git unzip
+
+#install oracle java7
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+
+#install eclipse
+curl http://eclipse.bluemix.net/packages/mars.1/data/eclipse-java-mars-1-linux-gtk-x86_64.tar.gz | tar xvz
+
+#setup TKP
+git clone https://github.com/TeachingKidsProgramming/TeachingKidsProgramming.Java
+cd TeachingKidsProgramming.Java
+unzip eclipse_workspace.zip 
